@@ -1,0 +1,146 @@
+.contact-page {
+  .text-zone {
+    width: 40%;
+    margin: 0 100px;
+    position: relative;
+
+    h1 {
+      position: relative;
+      color: #ffd700;
+      font-size: 56px;
+      line-height: 53px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+
+      &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -30px;
+        left: -15px;
+        opacity: 0.6;
+      }
+      &::after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        opacity: 0.6;
+        bottom: 0;
+        margin-bottom: -40px;
+        left: -15px;
+      }
+    }
+
+    p {
+      margin: 50px 0;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+
+  .contact-form {
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, 1fr) 150px 1fr;
+      gap: 10px;
+
+      input:not(:last-child),
+      textarea {
+        background-color: #115173;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        resize: none;
+        font-family: 'Open sans', sans-serif;
+        &:focus {
+          border-bottom: solid 2px #ffd700;
+
+          &:invalid {
+            border-bottom: solid 2px red;
+          }
+        }
+      }
+      .form {
+        &-name {
+          grid-column: 1 /2;
+        }
+        &-email {
+          grid-column: 2/3;
+          grid-row: 1 / 2;
+        }
+        &-subject {
+          grid-column: 1/3;
+        }
+        &-message {
+          grid-column: 1/3;
+        }
+        &-submit {
+          grid-column: 2/3;
+          width: fit-content;
+          padding: 3px 15px;
+          color: #ffd700;
+          background: #022c43;
+          border: solid 1px #ffd700;
+          border-radius: 4px;
+          justify-self: end;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .map {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: backInRight 1s 2s;
+    animation-fill-mode: forwards;
+    &-info {
+      position: absolute;
+      padding: 20px;
+      background: #000;
+      color: #fff;
+      font-size: 17px;
+      font-family: 'Helvetica';
+      z-index: 2;
+      left: 80px;
+      top: 80px;
+      p {
+        &:nth-child(3) {
+          white-space: nowrap;
+        }
+        &:nth-child(4) {
+          margin-bottom: 40px;
+        }
+      }
+      a {
+        color: #fff;
+      }
+    }
+
+    &-content {
+      width: 100%;
+      height: 100%;
+      .leaflet-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        opacity: 0;
+        animation: backInRight 1s 1.2s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}

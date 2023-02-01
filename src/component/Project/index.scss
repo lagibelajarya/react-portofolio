@@ -1,0 +1,103 @@
+.project {
+  font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system,
+    system-ui, sans-serif;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &-wrapper {
+  }
+  &-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0;
+    & p {
+      &:nth-child(1) {
+        color: #64ffda;
+        font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+          monospace;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      &:nth-child(2) {
+        color: #ccd6f6;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+    span {
+      margin-left: 20px;
+      width: 200px;
+      height: 1px;
+      background-color: #64ffda;
+    }
+  }
+  &-content {
+    display: flex;
+    gap: 50px;
+    &-left {
+      &-src {
+        background-position: center !important;
+        background-size: cover !important;
+        height: 250px;
+        width: 350px;
+        border-radius: 5px;
+      }
+    }
+    &-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      &-1 {
+        margin-bottom: 20px;
+        p {
+          text-align: end;
+          &:nth-child(1) {
+            color: #64ffda;
+            font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+              monospace;
+            font-size: 16px;
+            font-weight: 400;
+          }
+          &:nth-child(2) {
+            color: #ccd6f6;
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+      }
+      &-2 {
+        color: #a8b2d1;
+        font-size: 18px;
+        padding: 12px;
+        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+        background-color: rgba(2, 12, 27, 0.7);
+        margin-bottom: 20px;
+      }
+      &-3 {
+        margin-bottom: 20px;
+        border-radius: 5px;
+        display: flex;
+        gap: 10px;
+        font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+          monospace;
+        p {
+          font-size: 13px;
+          color: #a8b2d1;
+        }
+      }
+      &-4 {
+        display: flex;
+        gap: 10px;
+        & svg {
+          height: 26px;
+        }
+      }
+    }
+  }
+}

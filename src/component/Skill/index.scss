@@ -1,0 +1,75 @@
+.skill {
+  .text-zone {
+    margin-left: 100px;
+    position: relative;
+
+    h1 {
+      position: relative;
+      color: #ffd700;
+      font-size: 56px;
+      line-height: 53px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+
+      &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -30px;
+        left: -15px;
+        opacity: 0.6;
+      }
+      &::after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        opacity: 0.6;
+        bottom: 0;
+        margin-bottom: -40px;
+        left: -15px;
+      }
+    }
+
+    .desc {
+      margin-top: 60px;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &-content {
+    flex-direction: column;
+    display: flex;
+    margin-left: 100px;
+    gap: 3rem;
+    &-item {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+      img {
+        height: 100px;
+        transition: all 0.3s;
+        &.jquery {
+          height: 50px;
+        }
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}
