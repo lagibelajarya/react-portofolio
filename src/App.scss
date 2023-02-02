@@ -40,3 +40,25 @@ textarea {
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
 }
+.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.hide {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+.size-0 {
+  transform: scale(0);
+}
+.size-full {
+  transform: scale(1);
+}
+.trans {
+  &-0 {
+    transform: translate(0);
+  }
+  &-x100 {
+    transform: translateX(100%);
+  }
+}

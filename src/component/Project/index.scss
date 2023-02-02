@@ -10,6 +10,13 @@
   flex-direction: column;
 
   &-wrapper {
+    width: 70%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
   }
   &-title {
     display: flex;
@@ -39,14 +46,16 @@
   }
   &-content {
     display: flex;
-    gap: 50px;
+    align-items: center;
+    gap: 24px;
     &-left {
       &-src {
-        background-position: center !important;
+        background-position: top !important;
         background-size: cover !important;
         height: 250px;
-        width: 350px;
+        width: 450px;
         border-radius: 5px;
+        cursor: pointer;
       }
     }
     &-right {
@@ -83,11 +92,13 @@
         margin-bottom: 20px;
         border-radius: 5px;
         display: flex;
+        flex-wrap: wrap;
+        text-transform: capitalize;
         gap: 10px;
         font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
           monospace;
         p {
-          font-size: 13px;
+          font-size: 16px;
           color: #a8b2d1;
         }
       }
@@ -100,4 +111,53 @@
       }
     }
   }
+}
+.swiper {
+  transition: all 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+  margin-left: 60px !important;
+  width: -webkit-fill-available !important;
+  height: 100%;
+  position: fixed !important;
+  top: 0px;
+  left: 0px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(black, 0.5);
+
+  &-wrapper {
+    width: -webkit-fill-available;
+    height: 70% !important;
+  }
+  .closeSwiper {
+    position: fixed;
+    right: 32px;
+    top: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  .slide-img {
+    background-position: center !important;
+    background-size: cover !important;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
