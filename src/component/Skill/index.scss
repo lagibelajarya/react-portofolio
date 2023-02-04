@@ -1,8 +1,11 @@
 .skill {
-  padding-right: 100px;
   .text-zone {
     margin-left: 100px;
     position: relative;
+
+    @media (max-width: 768px) {
+      margin: 0 50px;
+    }
 
     h1 {
       position: relative;
@@ -54,8 +57,12 @@
   &-content {
     flex-direction: column;
     display: flex;
-    margin-left: 100px;
+    margin: 0 100px;
     gap: 3rem;
+
+    @media (max-width: 768px) {
+      margin: 0 50px;
+    }
     &-item {
       display: flex;
       gap: 30px;

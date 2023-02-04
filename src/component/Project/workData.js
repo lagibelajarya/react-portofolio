@@ -16,7 +16,7 @@ export const workData = [
     divisi: 'FrontEnd Developer',
     desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor similique laborum optio architecto libero enim aliquam perferendis facilis amet sunt?',
     language: ['laravel', 'jquery', 'scss'],
-    link: 'https://github.com/NailulIjlalHaq/company-profile-pgri-pasuruan',
+    link: 'https://pgripasuruankab.or.id/',
     swiper: ['pgri.jpg'],
   },
   {
@@ -27,16 +27,7 @@ export const workData = [
     desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor similique laborum optio architecto libero enim aliquam perferendis facilis amet sunt?',
     language: ['laravel api', 'vue3', 'scss', 'javascript'],
     link: 'https://github.com/rifaldimuhammad/madig-vue',
-    swiper: ['nesfol1.jpg' , 'nesfol2.jpg', 'nesfol3.jpg'],
+    swiper: ['nesfol1.jpg', 'nesfol2.jpg', 'nesfol3.jpg'],
   },
-  {
-    name: 'LONDON MOSQUES',
-    image: 'londonMosque.jpg',
-    type: 'Mosques Website',
-    divisi: 'FrontEnd Developer',
-    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor similique laborum optio architecto libero enim aliquam perferendis facilis amet sunt?',
-    language: ['laravel ', 'scss', 'jquery'],
-    link: '',
-    swiper: ['londonMosque.jpg'],
-  },
+
 ]

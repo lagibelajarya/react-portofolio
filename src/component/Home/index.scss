@@ -1,7 +1,33 @@
 .home-page {
+  justify-content: space-between;
+
   .text-zone {
-    margin-left: 100px;
+    flex: 1;
+    margin-left: 50px;
     position: relative;
+  }
+  .tag-canvas-container {
+    flex: 2;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    & canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: auto;
+      height: 100%;
+      width: 700px;
+      height: 700px;
+    }
   }
   h1 {
     color: #ffff;
@@ -71,6 +97,6 @@
     }
   }
 }
-.mainpage-loader{
+.mainpage-loader {
   display: none;
 }

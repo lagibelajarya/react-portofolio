@@ -9,6 +9,7 @@ import {
   faHome,
   faUser,
   faLightbulb,
+  faWindowRestore,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
@@ -50,7 +51,11 @@ const Sidebar = () => {
           className="project-link"
           to="/project"
         >
-          <FontAwesomeIcon icon={faLightbulb} color="#4d4d4e" to="/project" />
+          <FontAwesomeIcon
+            icon={faWindowRestore}
+            color="#4d4d4e"
+            to="/project"
+          />
         </NavLink>
         <NavLink
           exact="true"

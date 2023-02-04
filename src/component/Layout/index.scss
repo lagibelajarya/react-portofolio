@@ -2,10 +2,15 @@
 }
 .page {
   height: 100%;
-  width: 100%;
+  width: -webkit-fill-available;
   margin-left: 60px;
   min-height: 100vh;
   background: #022c43;
+
+  @media (max-width: 600px) {
+    margin-left: 0;
+    margin-top: 60px;
+  }
 }
 .tags {
   color: #ffd700;
@@ -15,6 +20,7 @@
   font-size: 18px;
   font-family: 'La Belle Aurore';
   z-index: 5;
+  display: none;
 }
 .top-tags {
   bottom: auto;
