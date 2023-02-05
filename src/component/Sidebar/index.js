@@ -126,6 +126,7 @@ const Sidebar = () => {
               barBtnClick()
             }}
             exact="true"
+            className="home-link"
             activeclassname="active"
             to="/"
           >
