@@ -26,7 +26,7 @@ const Contact = () => {
     emailjs
       .sendForm(
         'gmail',
-        'Yw2N5K1gLmt69rMv_',
+        'service_sxn4otv',
         refForm.current,
         'Yw2N5K1gLmt69rMv_'
       )
@@ -95,15 +95,13 @@ const Contact = () => {
         </div>
         <div className="map">
           <div className="map-info">
-            <p>Muhammad Rifaldi</p>
-            <p>Purwosari</p>
             <p>Cendono, Purwosari, Pasuruan 67162</p>
             <a href="mailto:rifald84@gmail.com">rifald84@gmail</a>
           </div>
           <div className="map-content">
-            <MapContainer center={[-7.998216, 112.624225]} zoom={13}>
+            <MapContainer center={[-7.752384, 112.696566]} zoom={13}>
               <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-              <Marker position={[-7.998216, 112.624225]}>
+              <Marker position={[-7.752384, 112.696566]}>
                 <Popup>disinal saya illiyin studio</Popup>
               </Marker>
             </MapContainer>

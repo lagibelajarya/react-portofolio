@@ -1,10 +1,37 @@
 .home-page {
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 100px;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: stretch;
+    margin-left: 100px;
+  }
+  @media (max-width: 600px) {
+    margin-left: 50px;
+  }
 
   .text-zone {
-    flex: 1;
     margin-left: 50px;
     position: relative;
+    @media (max-width: 1100px) {
+      margin-left: 0;
+    }
+  }
+  &-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    img {
+      transform: rotate(30deg);
+      width: 40vw;
+      max-width: 400px;
+      height: fit-content;
+      @media (max-width: 500px) {
+        width: 50vw;
+      }
+    }
   }
   .tag-canvas-container {
     flex: 2;
@@ -57,6 +84,11 @@
       margin-top: 18px;
       margin-left: 20px;
       animation: fadeIn 1s 1.7s backwards;
+
+      @media (max-width: 600px) {
+        left: -30px;
+        margin-top: 40px;
+      }
     }
     img {
       opacity: 0;

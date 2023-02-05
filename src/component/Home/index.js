@@ -4,7 +4,7 @@ import Loader from 'react-loaders'
 import LogoTitle from '../../assets/images/logo-s.svg'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
-
+import logo from '../../assets/images/logo-s.svg'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['i', 'f', 'a', 'l', 'd', 'i']
@@ -64,7 +64,8 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="tag-canvas-container">
+        <div className="home-page-img">
+          <img src={logo} alt="" />
         </div>
       </div>
       <Loader type="pacman" />

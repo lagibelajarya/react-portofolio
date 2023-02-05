@@ -28,6 +28,10 @@
     gap: 10px;
     margin: 40px 0;
     width: -webkit-fill-available;
+    @media (max-width: 400px) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
     & p {
       &:nth-child(1) {
         color: #64ffda;
@@ -37,10 +41,12 @@
         font-weight: 400;
       }
       &:nth-child(2) {
-        // flex: 2;
         color: #ccd6f6;
         font-size: 24px;
         font-weight: 600;
+        @media (max-width: 400px) {
+          font-size: 20px;
+        }
       }
     }
     span {
@@ -147,9 +153,13 @@
   justify-content: center;
   background-color: rgba(black, 0.5);
 
+  @media (max-width: 600px) {
+    margin-left: 0 !important;
+  }
   &-wrapper {
     width: -webkit-fill-available;
-    height: 70% !important;
+    height: 50vw !important;
+    max-height: 600px;
   }
   .closeSwiper {
     position: fixed;
@@ -157,6 +167,10 @@
     top: 32px;
     height: 32px;
     cursor: pointer;
+    @media (max-width: 600px) {
+      top: 92px;
+      z-index: 1000;
+    }
   }
   .slide-img {
     background-position: center !important;
