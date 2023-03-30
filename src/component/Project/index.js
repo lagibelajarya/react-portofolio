@@ -52,8 +52,8 @@ const Project = () => {
                 </div>
                 <div className="project-content-right">
                   <div className="project-content-right-1">
-                    <p>{item.type} Project</p>
                     <p>{item.divisi} </p>
+                    <p>{item.type} </p>
                   </div>
                   <div className="project-content-right-2">{item.desc}</div>
                   <div className="project-content-right-3">
@@ -105,6 +105,7 @@ const Project = () => {
           onClick={reverseToggle}
           color="#fff"
         />
+        `
         {workData[indexImg].swiper.map((item) => {
           return (
             <SwiperSlide key={item}>

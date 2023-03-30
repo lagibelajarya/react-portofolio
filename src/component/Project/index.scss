@@ -165,7 +165,12 @@
     position: fixed;
     right: 32px;
     top: 32px;
-    height: 32px;
+    height: 24px;
+    width: 24px;
+    z-index: 1000;
+    border-radius: 100%;
+    background-color: white;
+    color: black;
     cursor: pointer;
     @media (max-width: 600px) {
       top: 92px;
